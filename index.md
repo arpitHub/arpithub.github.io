@@ -1,34 +1,43 @@
-## Portfolio (Work in Progress)
+## Portfolio
 
 ---
-
-### Category Name 1
-
-[Project 1 Title](/sample_page)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+<link type="text/css" rel="stylesheet" href="/style.css" />
+# GIS 486 
 
 ---
-[Project 2 Title](/pdf/sample_presentation.pdf)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+## [Week 1](/pdf/Week_1_Merged.pdf)
+
+<div class = "text-green">
+Learning the basics of QGIS
+</div>
+
+[<img src="images/Geo_Map.PNG?raw=true"/>](/pdf/Week_1_Merged.pdf)
 
 ---
-[Project 3 Title](http://example.com/)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+## [Week 2](pdf/Crookshank_Week2_Merged.pdf)
 
----
+Learning the basics of R and its applications in QGIS
 
-### Category Name 2
+[This is the Notebook used](/Projects/Crookshank_Chap2.Rmd)
+[<img src="images/Week2_Image.PNG?raw=true"/>](/pdf/Crookshank_Week2_Merged.pdf)
 
-- [Project 1 Title](http://example.com/)
-- [Project 2 Title](http://example.com/)
-- [Project 3 Title](http://example.com/)
-- [Project 4 Title](http://example.com/)
-- [Project 5 Title](http://example.com/)
+## [Week 6](pdf/webmap_pdf.pdf)
 
----
+Here's a Webmap that doesn't work!
 
+<img src="images/webmap_png.png?raw=true"/>
 
+[please work](Projects/Webmaps/Week_6/W6_Third_Try/qgis2web_2021_03_11-21_35_23_701071/index.html)
 
+Here's a gif in which I realize that my color scheme is garbage!
+
+This color scheme looked much better as still images, but it's a bit trippy as a gif
+
+[<img src="gifs/MD_Work_Hours.gif?raw=true"/>](gifs/MD_Work_Hours.gif)
+
+I barely documented this code but it's just doing the same thing over and over again in a startlingly inelegant way, so enjoy!
+
+[The code in question](Projects/Crookshank_Week6.Rmd)
 
 ---
 <p style="font-size:11px">Page template forked from <a href="https://github.com/evanca/quick-portfolio">evanca</a></p>
