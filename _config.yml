@@ -6,7 +6,9 @@
 # --- Required options --- #
 
 # Name of website
-title: My Website
+title: Data Talkies
+
+# Website theme
 
 # Your name to show in the footer
 author: Arpit Rawat
@@ -39,15 +41,15 @@ round-avatar: true
 # Select the social network links that you want to show in the footer.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: ""
-  facebook:
   github: arpithub
   twitter: realarpit
-  patreon:
-  youtube:
+  linkedin: arpit-rawat
+#  email: ""
+#  facebook:
+#  patreon:
+#  youtube:
 #  medium: yourname
 #  reddit: yourname
-#  linkedin: daattali
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
@@ -223,6 +225,7 @@ exclude:
   - screenshot.png
   - docs/
   - .DS_Store
+  - backup/
 
 plugins:
   - jekyll-paginate
