@@ -8,7 +8,8 @@
 # Name of website
 title: Data Talkies
 
-# Website theme
+# Theme
+theme: jekyll-theme-midnight
 
 # Your name to show in the footer
 author: Arpit Rawat
@@ -17,10 +18,11 @@ author: Arpit Rawat
 
 navbar-links:
   About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: ""
-    - Learn markdown: ""
-  Author's home: "https://www.iarpit.com"
+  Portfolio:
+    - Streamlit ML App: "https://end-to-end-ml-streamlit-app.herokuapp.com/"
+    - Photograpy: "https://www.iarpit.com/raw.arpit"
+  LinkedIn: "https://www.linkedin.com/in/arpit-rawat"
+#  Author's home: "https://www.iarpit.com"
 
 # --- Logo --- #
 

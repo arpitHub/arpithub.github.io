@@ -11,4 +11,4 @@ tags: [welcome]
 comments: true
 ---
 
-After procrastinating my task for creating a website where I can dump my thoughts, share my journey in the Data Science field and occasionally my travel stories.
+Finally, after many procrastination, I have created my personal website where I can dump my thoughts, share my journey in the Data Science field and occasionally my travel stories. I hope you will find the my thoughts useful and would love to hear your feedback in the comments. Have a wonderful day!
