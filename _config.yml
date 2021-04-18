@@ -17,7 +17,7 @@ navbar-links:
   About Me: "aboutme"
   Portfolio:
     - Streamlit ML App: "https://end-to-end-ml-streamlit-app.herokuapp.com/"
-    - Photograpy: "https://www.iarpit.com/raw.arpit"
+#    - Photograpy: "https://www.instagram.com/raw.arpit"
   LinkedIn: "https://www.linkedin.com/in/arpit-rawat"
 #  Author's home: "https://www.iarpit.com"
 
