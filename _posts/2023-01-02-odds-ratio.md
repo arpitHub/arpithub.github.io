@@ -62,7 +62,7 @@ Here are the 3 Signifincant Tests we can perform:
 2. Chi-Square Test
 3. Wald Test
 
-Although the Odds Ratio is a powerful tool it should be used very carefully.
+Although the Odds Ratio is a powerful tool but it should be used very carefully.
 
 References:
 1. [https://www.youtube.com/watch?v=5zPSD_e_N04]
