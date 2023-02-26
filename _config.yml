@@ -16,7 +16,7 @@ author: Arpit Rawat
 navbar-links:
   About Me: "aboutme"
   Portfolio:
-    - Streamlit ML App: "https://end-to-end-ml-streamlit-app.herokuapp.com/"
+    - Streamlit ML App: "https://huggingface.co/spaces/arpitr/end_to_end_ml_app"
 #    - Photograpy: "https://www.instagram.com/raw.arpit"
   LinkedIn: "https://www.linkedin.com/in/arpit-rawat"
 #  Author's home: "https://www.iarpit.com"
@@ -132,7 +132,7 @@ footer-link-col: "#404040"
 #gtag: ""
 
 # Fill in your Google Analytics ID to track your website using Google Analytics
-google_analytics: "UA-193500230-1"
+google_analytics: "G-0LV5DQ3ZSZ"
 
 # Google Tag Manager ID
 #gtm: ""
