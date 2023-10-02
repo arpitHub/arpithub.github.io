@@ -13,4 +13,4 @@ comments: true
 
 I wanted to create a simple app which can let you analyze multiple public datasets at one place and build a prediction pipeline.
 Here is a Streamlit app which has the mentioned functionality:
-[https://end-to-end-ml-streamlit-app.herokuapp.com](#End to End ML app)
+[https://huggingface.co/spaces/arpitr/end_to_end_ml_app](#End to End ML app)
