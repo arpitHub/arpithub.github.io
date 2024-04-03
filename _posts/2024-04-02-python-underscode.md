@@ -33,6 +33,6 @@ This will return multiple parameters but we ignore other parameters except `firs
 >>> _ * 5
 30
 ```
-Here underscode saves the value of last expression ie. `1+2+3=5`
+Here underscore saves the value of last expression ie. `1+2+3=5`
 
 In short, Underscore `_` can be used as a placeholder, unused variable indicator or temporary result storage. It makes our code readable and expressive. Happy Code Writing!
