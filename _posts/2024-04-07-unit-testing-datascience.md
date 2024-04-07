@@ -19,6 +19,7 @@ Unit testing involves testing individual units (functions, methods, classes) of 
 #### Setting Up the Project
 Before we dive into writing tests, let's set up our project structure:
 
+```
 data-science-project/
 │
 ├── src/
@@ -33,17 +34,18 @@ data-science-project/
 │   └── iris.csv
 │
 └── requirements.txt
+```
 
-**src/:** Directory containing Python modules for data preprocessing (preprocessing.py) and model training (model.py).
-**tests/:** Directory for storing test modules (test_preprocessing.py and test_model.py).
-**data/:** Directory containing the Iris dataset (iris.csv).
-**requirements.txt:** File listing project dependencies (e.g., pytest, pandas, scikit-learn).
+**src/:** Directory containing Python modules for data preprocessing (preprocessing.py) and model training (model.py).\
+**tests/:** Directory for storing test modules (test_preprocessing.py and test_model.py).\
+**data/:** Directory containing the Iris dataset (iris.csv).\
+**requirements.txt:** File listing project dependencies (e.g., pytest, pandas, scikit-learn).\
 
 #### Installing Dependencies
 Make sure you have Python and pip installed. Create a conda environment and install the required packages:
 
 ```python
-conda create --name='ml_test_project' python=3.10
+conda create --name=ml_test_project python=3.10
 conda activate ml_test_project
 pip install -r requirements.txt
 ```
@@ -74,7 +76,9 @@ def preprocess_data(df):
     df['species'] = df['species'].astype('category').cat.codes
     return df
 ```
+
 Now, create `tests/test_preprocessing.py` to write unit tests for the preprocessing functions:
+
 ```python
 import pytest
 from src.preprocessing import load_iris_dataset, preprocess_data
