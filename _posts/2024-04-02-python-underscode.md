@@ -11,7 +11,7 @@ tags: [python,python_tips]
 comments: true
 ---
 
-We all have seen underscode symbol in Python. One of the most common uses of the underscore is as a placeholder variable. When iterating over a sequence or generating a range of values, there are often situations where the loop variable is not needed. In such cases, Python programmers opt to use _ as a concise way to indicate that the value is irrelevant to the current context.                                      
+We all have seen underscore symbol in Python. One of the most common uses of the underscore is as a placeholder variable. When iterating over a sequence or generating a range of values, there are often situations where the loop variable is not needed. In such cases, Python programmers opt to use _ as a concise way to indicate that the value is irrelevant to the current context.                                      
 
 ```python
 for _ in range(10):
