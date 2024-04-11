@@ -65,5 +65,5 @@ Here are the 3 Signifincant Tests we can perform:
 Although the Odds Ratio is a powerful tool but it should be used very carefully.
 
 References:
-1. [https://www.youtube.com/watch?v=5zPSD_e_N04]
-2. [https://www.youtube.com/watch?v=8nm0G-1uJzA]
+1. https://www.youtube.com/watch?v=5zPSD_e_N04
+2. https://www.youtube.com/watch?v=8nm0G-1uJzA
