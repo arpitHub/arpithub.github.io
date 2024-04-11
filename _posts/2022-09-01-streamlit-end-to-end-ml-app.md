@@ -7,10 +7,10 @@ thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/path.jpg
 gh-repo: arpithub/arpithub.github.io
 gh-badge: [star, fork, follow]
-tags: [streamlit,ml]
+tags: [streamlit,ml, huggingface]
 comments: true
 ---
 
 I wanted to create a simple app which can let you analyze multiple public datasets at one place and build a prediction pipeline.
 Here is a Streamlit app which has the mentioned functionality:
-[https://huggingface.co/spaces/arpitr/end_to_end_ml_app](#End to End ML app)
+[End to End ML app](https://huggingface.co/spaces/arpitr/end_to_end_ml_app)
