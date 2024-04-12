@@ -14,7 +14,8 @@ Off-duty, I'm trailblazing hiking spots, [capturing snapshots](https://www.insta
 
 Areas of Expertise:
 
-Predictive Modeling (predicting the future, one dataset at a time)
-Business Intelligence (illuminating business strategies with data-driven insights)
-Automation (making processes as smooth as a well-oiled machine)
+- Predictive Modeling (predicting the future, one dataset at a time)
+- Business Intelligence (illuminating business strategies with data-driven insights)
+- Automation (making processes as smooth as a well-oiled machine)
+
 The allure of Data Science lies in its ability to deliver data-lightful results. Remember, there are no shortcuts in this data maze—patience, smarts, and continuous learning are the keys to decrypting success!
