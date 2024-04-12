@@ -6,12 +6,15 @@ subtitle: Data Scientist
 
 <img  width = "280" height = "280" style="float:left; margin-right: 20px;" src="/assets/img/me.jpeg" >
 
-Currently, I am working as a Data Scientist at [Mailgun by Sinch](https://www.mailgun.com). Prior to this, I have worked as Senior Software Engineer at [Agile Media Lab](http://agilemedialab.in/) for 5 years. I have completed my Master's in Engineering Management from Northeastern University at Boston in 2018 and Bachelor's in Computer Science from Panjab University at Chandigarh in 2011. My interest for Data Science started during my time at Northeastern when I realized that by applying correct knowledge and tools we can generate valuable insights from the data (Of course you have make sure about the integrity of the data). **Self learning** plays a big role in data science field, to this day I keep learning new things everyday and *This is the way!*.
-In my leisure time I explore hiking places, [taking photographs](https://www.instagram.com/raw.arpit), play tennis and perform experiments with Raspberry pi(es).
+Currently, I'm crunching numbers as a Data Scientist at [Sinch](https://www.sinch.com). Before diving into data, I coded waves as a Senior Software Engineer at [Agile Media Lab](https://www.crunchbase.com/organization/weblogs-sl) for 5 years. I earned my Master’s in Engineering Management from Northeastern University in Boston in 2018 and debugged my way through a Bachelor’s in Computer Science at Panjab University in Chandigarh in 2011.
 
-My area of Expertise:
-- Predictive Modeling
-- Business Intelligence
-- Automation
+My fascination with Data Science sparked during my Northeastern days, where I realized the power of extracting insights from data—ensuring data integrity, of course! Self-learning is my algorithm of choice in the data science realm—I'm always updating my code.
 
-The fascinating thing about Data Science discipline is that if it's used thoughtfully we can see good results. There are no shortcuts for implementing data science projects, so be patient, be smart and keep learning.
+Off-duty, I'm trailblazing hiking spots, [capturing snapshots](https://www.instagram.com/raw.arpit), serving aces on the tennis court, and cooking up experiments with Raspberry Pis.
+
+Areas of Expertise:
+
+Predictive Modeling (predicting the future, one dataset at a time)
+Business Intelligence (illuminating business strategies with data-driven insights)
+Automation (making processes as smooth as a well-oiled machine)
+The allure of Data Science lies in its ability to deliver data-lightful results. Remember, there are no shortcuts in this data maze—patience, smarts, and continuous learning are the keys to decrypting success!
