@@ -38,7 +38,7 @@ data-science-project/
 **src/:** Directory containing Python modules for data preprocessing (preprocessing.py) and model training (model.py).\
 **tests/:** Directory for storing test modules (test_preprocessing.py and test_model.py).\
 **data/:** Directory containing the Iris dataset (iris.csv).\
-**requirements.txt:** File listing project dependencies (e.g., pytest, pandas, scikit-learn).\
+**requirements.txt:** File listing project dependencies (e.g., pytest, pandas, scikit-learn).
 
 #### Installing Dependencies
 Make sure you have Python and pip installed. Create a conda environment and install the required packages:
@@ -172,5 +172,6 @@ To run the tests using Pytest, navigate to the `tests` directory and execute:
 pytest
 ```
 
+- [Full Code in Git Repo](https://github.com/arpitHub/blogposts_code/tree/main/unit-testing-datascience)
 #### Conclusion
 By incorporating a suite of comprehensive unit tests, you can ensure the robustness and correctness of your data preprocessing, modeling, and evaluation workflows. Continuously expand and refine your tests to cover various scenarios and edge cases, enhancing the reliability and integrity of your data science projects.
