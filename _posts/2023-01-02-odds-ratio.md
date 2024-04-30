@@ -1,69 +1,102 @@
 ---
 layout: post
 title: Odds and Odds Ratio
-subtitle: Explaining Odds and Odds Ratio with the help of example
-cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/thumb.png
-share-img: /assets/img/path.jpg
+subtitle: Understanding Odds, Odds Ratios, and Their Use in Medicine
+cover-img: /assets/img/odds_ratio_cover.jpeg
+thumbnail-img: /assets/img/odds_ratio_thumb.png
+share-img: /assets/img/odds_ratio_main.jpeg
 gh-repo: arpithub/arpithub.github.io
 gh-badge: [star, fork, follow]
 tags: [statistics,book]
 comments: true
 ---
 
-Currently, I am reading the book **The Art of Statistics** by Sir David John Spiegelhalter and wanted to touch on the Odds and Odds ratio.
-We see these concepts everywhere, odds of an event, odds of winning something.
-The definition of Odds is:
- __Chance of an event happening / Chance of an event not happening__
+I'm currently reading `The Art of Statistics` by Sir David John Spiegelhalter and I'd like to discuss the concepts of odds and odds ratios. We encounter these terms frequently when discussing the likelihood of events, from the odds of winning a game to the effectiveness of medical treatments.
 
-Odds Ratio: It's the ratio of odds. 
-__Odds of an event happening / Odds of an event not happening__
+#### What are Odds?
 
-In the medical domain, the Odds ratio helps to understand if an intervention works or not and to what degree.
+Odds represent the probability of an event happening versus the probability of it not happening. They are calculated as:
 
-For example, we want to test the effectiveness of a vaccine campaign. We will first calculate the odds of the Intervention group and the odds of the Control group.
-Let's say there are 500 people in the **Intervention group** which consists of people seen the vaccine campaign and the **Control group** which consists of 500 people who haven't seen the campaign.
-Among the Intervention group, 400 people have taken the vaccine, and the remaining 100 people haven't taken the vaccine.
-In the Control group, 275 people have taken the vaccine and the remaining 225 people haven't taken the vaccine.
+```Odds of an event happening / Odds of an event not happening```
 
-Odds of getting the vaccine in the Intervention group = No. of people who took the vaccine / No. of people who haven't taken the vaccine
+#### What is Odds Ratio?
 
-Plugging in the numbers from the above example,
-Odds of getting vaccine in Intervention group = 400/100 = 4
+An odds ratio compares the odds of an event happening under two different conditions. It's calculated as:
 
-Odds of getting the vaccine in the Control group = No. of people who took the vaccine / No. of people who haven't taken the vaccine
+```(Odds of event happening in one group ) / (Odds of event happening in another group)```
 
-Plugging in the numbers from the above example,
-Odds of getting vaccine in Intervention group = 275/200 ~ 1.23
+#### Odds Ratios in Medicine
 
-To find the effectiveness of the vaccine campaign we will calculate the Odds Ratio.
-ie. Ratio of Odds of Intervention group (saw campaign) to Odds of Control group (didn't see campaign).
+In medical research, odds ratios help us understand if a treatment, intervention, or exposure influences a particular health outcome.  Let's consider a vaccine campaign example:
 
-Plugging in the numbers:
-Odds Ratio = 4/1.23 = 3.25
+#### Scenario:
 
-How to interpret Odds Ratio:
-If, 
-Odd Ratio = 1 then it means there wasn't any effect of an action on a task, here campaign (Action) has no effect on taking the vaccine (task).
+**Intervention Group:** 500 people exposed to the vaccine campaign.
+**Control Group:** 500 people not exposed to the campaign.
+**Intervention Group Results:** 400 got vaccinated, 100 didn't.
+**Control Group Results:** 275 got vaccinated, 225 didn't.
 
-Odd Ratio > 1 means people who were exposed to action were more likely to perform a task, here people who saw the campaign were more likely to take the vaccine as compared to people who haven't seen the campaign.
+#### Calculating the Odds Ratio
 
-Odd Ratio < 1 means people who were exposed to action were less likely to perform a task, here people who saw the campaign were less likely to take the vaccine as compared to people who haven't seen the campaign.
+1. **Odds in Intervention Group:** 400 (vaccinated) / 100 (not vaccinated) = 4
+2. **Odds in Control Group:** 275 (vaccinated) / 225 (not vaccinated) ≈ 1.23
+3. **Odds Ratio:** 4 / 1.23 ≈ 3.25
 
-In our example since the Odds Ratio is greater than 1 that means the vaccine campaign was effective as people who saw the campaign (Intervention group) are more likely to take the vaccine.
-The Odds ratio value of 3.25 tells us that people in the Intervention group have 3 times more odds of taking the vaccine as compared to the Control group.
+```python
+import pandas as pd
 
-Note - Odds Ratio greater or less than 1 can be a positive or negative finding depending on the outcome.
-The Odds Ratio is like R-squared which shows the relationship between two things. In the above example, a relationship between Exposing to Vaccine Campaign and Getting the vaccine.
+# Create a sample dataset
+data = {'Vaccinated': ['Yes', 'Yes', 'No', 'No', 'Yes', 'Yes', 'No', 'No'],
+        'Group': ['Intervention', 'Intervention', 'Intervention', 'Intervention', 'Control', 'Control', 'Control', 'Control'],
+        'Count': [400, 100, 275, 225, 275, 225, 275, 225]}
+df = pd.DataFrame(data)
 
-To further validate the relationship between the vaccine campaign and getting the vaccine, we can perform some Significant tests. We can check if the Odds Ratio is statistically significant or not.
-Here are the 3 Signifincant Tests we can perform:
-1. Fisher's Exact Test
-2. Chi-Square Test
-3. Wald Test
+# Calculate odds for each group
+df['Odds'] = df['Count'][df['Vaccinated'] == 'Yes'] / df['Count'][df['Vaccinated'] == 'No']
 
-Although the Odds Ratio is a powerful tool but it should be used very carefully.
+# Calculate the odds ratio
+odds_ratio = df.loc[df['Group'] == 'Intervention', 'Odds'].iloc[0] / df.loc[df['Group'] == 'Control', 'Odds'].iloc[0]
 
-References:
-1. https://www.youtube.com/watch?v=5zPSD_e_N04
-2. https://www.youtube.com/watch?v=8nm0G-1uJzA
+print("Odds Ratio:", odds_ratio) 
+```
+
+#### Interpreting the Odds Ratio
+
+- **Odds Ratio = 1:** The intervention (vaccine campaign) had no effect on the likelihood of getting vaccinated.
+- **Odds Ratio > 1:** People exposed to the intervention were more likely to get vaccinated.
+- **Odds Ratio < 1:** People exposed to the intervention were less likely to get vaccinated.
+
+In our example, the odds ratio of 3.25 means people seeing the campaign were about 3 times more likely to get vaccinated than those who didn't. This suggests the campaign was effective.
+
+#### Important Notes
+
+Odds ratios, like correlation, show association but not necessarily causation.
+Statistical tests (like Fisher's Exact Test, Chi-Square Test, or the Wald Test) can further confirm if the odds ratio shows a real effect.
+
+```python
+import pandas as pd
+from scipy.stats import fisher_exact
+
+# Create a sample dataset (with Control group)
+data = {'Vaccinated': ['Yes', 'Yes', 'No', 'No', 'Yes', 'Yes', 'No', 'No'],
+        'Group': ['Intervention', 'Intervention', 'Intervention', 'Intervention', 'Control', 'Control', 'Control', 'Control'],
+        'Count': [400, 100, 275, 225, 275, 225, 275, 225]}
+df = pd.DataFrame(data)
+
+# Create a contingency table
+contingency_table = pd.crosstab(df['Group'], df['Vaccinated'])
+print(contingency_table)
+
+# Perform Fisher's Exact Test
+oddsratio, pvalue = fisher_exact(contingency_table)
+
+print("Odds Ratio:", oddsratio)
+print("p-value:", pvalue)
+```
+
+#### Conclusion
+ Odds and odds ratios provide a straightforward way to understand the likelihood of events and the strength of associations. They help us quantify how much more (or less) likely something is to happen under different conditions. In fields like medicine, this understanding is invaluable. Researchers can use these concepts to evaluate the effectiveness of treatments, explore risk factors for diseases, and make informed decisions that ultimately improve health outcomes.  While it's important to employ appropriate statistical tests and avoid jumping to conclusions about causation, odds and odds ratios are essential tools in the ongoing pursuit of data-driven insights.
+
+##### References:
+1. [NCCMT - URE - Odds Ratios](https://www.youtube.com/watch?v=5zPSD_e_N04)
+2. [StatQuest - Odds Ratios and Log(Odds Ratios), Clearly Explained!](https://www.youtube.com/watch?v=8nm0G-1uJzA)
