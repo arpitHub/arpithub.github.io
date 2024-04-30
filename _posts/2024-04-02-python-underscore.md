@@ -2,9 +2,9 @@
 layout: post
 title: Uses of Underscore in Python
 subtitle: Underscore examples in Python
-cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/thumb.png
-share-img: /assets/img/path.jpg
+cover-img: /assets/img/underscore_cover.jpeg
+thumbnail-img: /assets/img/underscore_thumb.png
+share-img: /assets/img/underscore_cover.jpeg
 gh-repo: arpithub/arpithub.github.io
 gh-badge: [star, fork, follow]
 tags: [python,python_tips]
