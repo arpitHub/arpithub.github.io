@@ -13,7 +13,8 @@ comments: true
 
 # Building an End-to-End Machine Learning App with Streamlit
 
-Over the past few weeks, I’ve been experimenting with Streamlit to create a lightweight, end-to-end machine learning [application](https://end-to-end-ml-app.streamlit.app/). The goal was simple: make it easy to **explore datasets, run quick EDA, and compare models** — all inside a clean web interface. I wish I would have this app during my Northeastern days so it would be easy for me to understand full datascience modeling process.
+Over the past few weeks, I’ve been experimenting with Streamlit to build a lightweight, end-to-end machine learning [application](https://end-to-end-ml-app.streamlit.app/). The goal was simple: make it easy to **explore datasets, run quick EDA, and compare models**, all inside a clean web interface. I only wish I had this app during my Northeastern days; it would have made understanding the full data science modeling process much easier.
+
 
 This post walks through the design, challenges, and lessons learned while building the app.
 
@@ -85,7 +86,6 @@ def load_pydataset(name: str):
     return df
 ```
 
-2. EDA Tools
 ### 2. EDA Tools
 Quick stats and correlation heatmaps are generated with pandas and Plotly:
 
