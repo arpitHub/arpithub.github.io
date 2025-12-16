@@ -11,8 +11,6 @@ tags: [datascience,ml,streamlit,pipeline]
 comments: true
 ---
 
-# Building an End-to-End Machine Learning App with Streamlit
-
 Over the past few weeks, I’ve been experimenting with Streamlit to build a lightweight, end-to-end machine learning [application](https://end-to-end-ml-app.streamlit.app/). The goal was simple: make it easy to **explore datasets, run quick EDA, and compare models**, all inside a clean web interface. I only wish I had this app during my Northeastern days; it would have made understanding the full data science modeling process much easier.
 
 
@@ -86,6 +84,8 @@ def load_pydataset(name: str):
     return df
 ```
 
+---
+
 ### 2. EDA Tools
 Quick stats and correlation heatmaps are generated with pandas and Plotly:
 
@@ -145,7 +145,7 @@ csv = df_pred.to_csv(index=False).encode("utf-8")
 st.download_button("Download CSV", csv, "predictions.csv", "text/csv")
 ```
 
-### Lessons Learned
+## Lessons Learned
 - Streamlit multipage apps are a great way to organize workflows. Each page feels like a step in the pipeline
 - Caching matters. Without it, even simple dataset loads can feel sluggish.
 - Keep it light. Removing heavy dependencies makes deployment painless and avoids GPU package issues.
@@ -153,22 +153,18 @@ st.download_button("Download CSV", csv, "predictions.csv", "text/csv")
 
 ---
 
-### Next Steps
+## Next Steps
 Some future additions:
 
 - A search bar for pydataset datasets
-
 - Time series, Multi modal datasets (Text, Image, Audio, Video)
-
 - Feature importance plots for tree-based models
-
 - Residual plots for regression tasks
-
 - Possibly a model export option (pickle/ONNX) for downstream use
 
 ---
 
-Conclusion
+## Conclusion
 This project reinforced how powerful Streamlit can be for rapid ML prototyping. By focusing on a lightweight design, I ended up with an app that’s easy to use, easy to deploy, and flexible enough for most everyday ML tasks.
 
 You can explore the code and adapt it to your own workflows. Whether you’re teaching, experimenting, or just curious, this app provides a solid foundation for interactive machine learning in Python.
