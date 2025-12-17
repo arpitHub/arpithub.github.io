@@ -11,7 +11,6 @@ tags: [datascience,ml,text-classification,streamlit,pipeline]
 comments: true
 ---
 
-## Intro
 Text data surrounds us — from emails and reviews to tweets and articles. The **Text ML Explorer App** was built to help learners understand how machine learning models can classify text step by step. It’s an interactive Streamlit app that takes you from raw text to predictions, making the workflow transparent and approachable.
 
 ---
@@ -48,7 +47,7 @@ The app is organized into four clear pages, each representing a stage in the tex
   - Compare accuracy across models  
   - Confusion matrix visualization  
   - Top Features chart showing which words drive spam vs ham predictions  
-  
+
 
 - **Results 📊**  
   - Test new messages against the trained model  
