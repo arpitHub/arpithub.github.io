@@ -11,8 +11,6 @@ tags: [generative ai,langchain,agents,agentic ai]
 comments: true
 ---
 
-# Understanding the LangChain Ecosystem
-
 If you've been even remotely involved in building LLM-powered apps, you've probably come across LangChain. But as the ecosystem expands, it can start to feel like a tangle of buzzwords: LangChain, LangGraph, LangSmith, LangGraph Platform. What does it all actually mean?
 
 Let’s understand these buzzwords.
