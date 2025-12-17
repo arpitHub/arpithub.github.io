@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Building an End-to-End Machine Learning App with Streamlit
-subtitle: Building an End-to-End Machine Learning App with Streamlit
+subtitle: From raw data to interactive predictions in one seamless workflow
 cover-img: /assets/img/pytest_1.jpg
 thumbnail-img: /assets/img/pytest_thumb.png
 share-img: /assets/img/pytest_2.jpg
