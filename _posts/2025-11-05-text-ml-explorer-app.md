@@ -50,8 +50,9 @@ The app is organized into four clear pages, each representing a stage in the tex
 - **Results 📊**  
   - Test new messages against the trained model  
   - See predictions (spam/ham) with probability scores  
-  - Word clouds for spam vs ham vocabulary  
+  - Word clouds for spam vs ham vocabulary
   - Explanation of confidence levels in predictions 
+
 ---
 
 ## Code Walkthrough
