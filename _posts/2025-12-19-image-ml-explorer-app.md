@@ -2,9 +2,9 @@
 layout: post
 title: "Image Explorer App: End-to-End ML for Image Classification"
 subtitle: "Learn how to preprocess, model, and interpret image data interactively"
-cover-img: /assets/img/text-explorer-cover.png
-thumbnail-img: /assets/img/text-explorer-main.png
-share-img: /assets/img/text-explorer-cover.png
+cover-img: /assets/img/image-explorer-cover.png
+thumbnail-img: /assets/img/image-explorer-main.png
+share-img: /assets/img/image-explorer-cover.png
 gh-repo: arpithub/arpithub.github.io
 gh-badge: [star, fork, follow]
 tags: [datascience,ml,image-classification,computer-vision,streamlit,pipeline]
