@@ -17,6 +17,8 @@ navbar-links:
   About Me: "aboutme"
   Portfolio:
     - Streamlit ML App: "https://huggingface.co/spaces/arpitr/end_to_end_ml_app"
+    - Text Explorer App: "https://text-ml-explorer.streamlit.app/"
+    - Image Explorer App: "https://image-ml-explorer.streamlit.app/"
 #    - Photograpy: "https://www.instagram.com/raw.arpit"
   LinkedIn: "https://www.linkedin.com/in/arpit-rawat"
 #  Author's home: "https://www.iarpit.com"
