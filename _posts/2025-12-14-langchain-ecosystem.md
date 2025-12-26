@@ -2,8 +2,8 @@
 layout: post
 title: Understanding the LangChain Ecosystem
 subtitle: Understanding the LangChain Ecosystem
-cover-img: /assets/img/pytest_1.jpg
-thumbnail-img: /assets/img/pytest_thumb.png
+cover-img: /assets/img/langchain-main-cover.png
+thumbnail-img: /assets/img/langchain-main.png
 share-img: /assets/img/pytest_2.jpg
 gh-repo: arpithub/arpithub.github.io
 gh-badge: [star, fork, follow]

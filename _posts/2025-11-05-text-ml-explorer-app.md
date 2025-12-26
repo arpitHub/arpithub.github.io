@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Text Explorer App — End-to-End ML for Text Classification"
+title: "Text Explorer App: End-to-End ML for Text Classification"
 subtitle: "Learn how to preprocess, model, and interpret text data interactively"
 cover-img: /assets/img/text-explorer-cover.png
 thumbnail-img: /assets/img/text-explorer-main.png
@@ -11,8 +11,7 @@ tags: [datascience,ml,text-classification,streamlit,pipeline]
 comments: true
 ---
 
-## Intro
-Text data surrounds us — from emails and reviews to tweets and articles. The **Text Explorer App** was built to help learners understand how machine learning models can classify text step by step. It’s an interactive Streamlit app that takes you from raw text to predictions, making the workflow transparent and approachable.
+Text data surrounds us — from emails and reviews to tweets and articles. The **Text ML Explorer App** was built to help learners understand how machine learning models can classify text step by step. It’s an interactive Streamlit app that takes you from raw text to predictions, making the workflow transparent and approachable.
 
 ---
 
@@ -35,11 +34,13 @@ The app is organized into four clear pages, each representing a stage in the tex
 - **Dataset Explorer 📂**  
   Preview datasets, inspect rows/columns, and understand how text and labels are structured. This builds intuition about the data before modeling.
 
+
 - **Preprocessing 🔍**  
   - Tokenization demo: split sentences into words  
   - Bag of Words vs TF‑IDF vectorization  
   - Step‑by‑step TF‑IDF calculation with worked examples  
   - Vocabulary preview to see which words are included  
+
 
 - **Model Builder 🤖**  
   - Train Logistic Regression, Naive Bayes, and Support Vector Classifier  
@@ -47,11 +48,13 @@ The app is organized into four clear pages, each representing a stage in the tex
   - Confusion matrix visualization  
   - Top Features chart showing which words drive spam vs ham predictions  
 
+
 - **Results 📊**  
   - Test new messages against the trained model  
   - See predictions (spam/ham) with probability scores  
-  - Word clouds for spam vs ham vocabulary  
+  - Word clouds for spam vs ham vocabulary
   - Explanation of confidence levels in predictions 
+
 ---
 
 ## Code Walkthrough
