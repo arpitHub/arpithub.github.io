@@ -209,15 +209,12 @@ from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 import numpy as np
 
 st.title("📊 Results")
-
-# --- Explanations ---
 st.write("### Testing the Model")
 st.markdown("""
 Now we can evaluate the trained model on unseen data.  
 👉 This step shows how well the model generalizes beyond the training set.
+Load model and data:
 """)
-
-# --- Load model and data ---
 if "model" in st.session_state and "X_images" in st.session_state and "y_labels" in st.session_state:
     model = st.session_state["model"]
     X = st.session_state["X_images"]
@@ -239,7 +236,7 @@ if "model" in st.session_state and "X_images" in st.session_state and "y_labels"
     idx = st.slider("Select a sample index:", 0, len(X) - 1, 0)
     st.image(X[idx], caption=f"True Label: {y[idx]}")
     st.write(f"Predicted Label: {y_pred[idx]}")
-    ```
+```
 
 👉 **Teaching note:**  
 The Results page is where theory meets practice. Students can:
