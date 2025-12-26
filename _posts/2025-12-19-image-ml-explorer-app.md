@@ -98,8 +98,7 @@ The default dataset here is Digits, a classic computer vision dataset of handwri
  - Labels are intuitive (digits 0–9), so learners can quickly connect predictions to real outcomes.
  - It provides a simple entry point into image classification before moving to larger datasets like MNIST or CIFAR‑10.
 
-
- ### 2. 🔧 Preprocessing
+### 2. 🔧 Preprocessing
 
 This page demonstrates how raw images are transformed into usable features for machine learning. Students can experiment with resizing, grayscale conversion, and normalization.
 
