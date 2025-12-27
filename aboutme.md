@@ -4,7 +4,7 @@ title: Arpit Rawat
 subtitle: Data Scientist
 ---
 
-<img  width = "280" height = "280" style="float:left; margin-right: 20px;" src="/assets/img/me.jpg" >
+<img  width = "280" height = "280" style="float:left; margin-right: 20px;" src="/assets/img/me.jpeg" >
 
 Currently, I'm crunching numbers as a Data Scientist at [Sinch](https://www.sinch.com). Before diving into data, I coded waves as a Senior Software Engineer at [Agile Media Lab](https://www.crunchbase.com/organization/weblogs-sl) for 5 years. I earned my Master’s in Engineering Management from Northeastern University in Boston in 2018 and debugged my way through a Bachelor’s in Computer Science at Panjab University in Chandigarh in 2011.
 
