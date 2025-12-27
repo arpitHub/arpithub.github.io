@@ -11,7 +11,7 @@ tags: [datascience,ml,image-classification,computer-vision,streamlit,pipeline]
 comments: true
 ---
 
-Text data surrounds us — from emails and reviews to tweets and articles. The **Text ML Explorer App** was built to help learners understand how machine learning models can classify text step by step. It’s an interactive Streamlit app that takes you from raw text to predictions, making the workflow transparent and approachable.
+Text data surrounds us — from emails and reviews to tweets and articles. The **[Image ML Explorer App](https://image-ml-explorer.streamlit.app/)** was built to help learners understand how machine learning models can classify text step by step. It’s an interactive Streamlit app that takes you from raw text to predictions, making the workflow transparent and approachable.
 
 ## Motivation
 
@@ -245,3 +245,5 @@ The Results page is where theory meets practice. Students can:
  - Understand that even simple models like Logistic Regression can make mistakes — and those mistakes are valuable learning opportunities.
 
 This final step closes the loop: from dataset → preprocessing → model building → evaluation.
+
+👉 Try it out here: [Image ML Explorer App](https://image-ml-explorer.streamlit.app/)

@@ -11,7 +11,7 @@ tags: [datascience,ml,text-classification,streamlit,pipeline]
 comments: true
 ---
 
-Text data surrounds us — from emails and reviews to tweets and articles. The **Text ML Explorer App** was built to help learners understand how machine learning models can classify text step by step. It’s an interactive Streamlit app that takes you from raw text to predictions, making the workflow transparent and approachable.
+Text data surrounds us — from emails and reviews to tweets and articles. The **[Text ML Explorer App](https://text-ml-explorer.streamlit.app/)** was built to help learners understand how machine learning models can classify text step by step. It’s an interactive Streamlit app that takes you from raw text to predictions, making the workflow transparent and approachable.
 
 ---
 
