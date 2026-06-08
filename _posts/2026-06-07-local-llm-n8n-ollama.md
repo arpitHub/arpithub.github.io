@@ -62,7 +62,7 @@ services:
     container_name: n8n
     restart: unless-stopped
     ports:
-      - "5678:5678"
+      - "1243:1243"
     extra_hosts:
       - "host.docker.internal:host-gateway"
     environment:
@@ -85,12 +85,12 @@ services:
 A few notes on what matters in an n8n stack:
 
 - **Persist the data volume.** n8n stores your workflows, credentials, and execution history in `/home/node/.n8n`. Mount a named volume or a host path there so nothing is lost when the container restarts. I have mapped it to my 5TB external HDD - `/Volumes/external_hdd/docker-data/volumes/n8n/data`
-- **Set the timezone** (`GENERIC_TIMEZONE` / `TZ`) so the scheduler fires at *your* 9am, not UTC.
+- **Set the timezone** (`GENERIC_TIMEZONE` / `TZ`) so the scheduler fires at **your** local time, not UTC.
 - **Set the host/port env vars** (`N8N_DB_PASSWORD`, `N8N_ENCRYPTION_KEY`) so n8n generates correct URLs for itself.
 
 Once the stack is up, n8n is reachable on its port and you can log in and start building.
 
-n8n - `http://localhost:5678`
+n8n - `http://localhost:1243`
 
 ![n8n editor — start page]( /assets/img/n8n-start-page.png )
 *The n8n editor's homepage*
@@ -135,7 +135,7 @@ Test the credential before building anything real. (I'll show the actual credent
 
 ## A quick tour of n8n's building blocks
 
-Before the workflow, the vocabulary in one paragraph: a **node** is a single step (fetch a feed, call a model, send a message). A **trigger node** is the special node that *starts* a workflow — on a schedule, a webhook, or manually. Data passes between nodes as a list of **items**, and you reference fields from earlier nodes using **expressions** (the `{{ }}` syntax). That's really all you need to read the workflow below.
+Before the workflow, the vocabulary in one paragraph: a **node** is a single step (fetch a feed, call a model, send a message). A **trigger node** is the special node that *starts* a workflow — on a schedule, a webhook, or manually. Data passes between nodes as a list of **items**, and you reference fields from earlier nodes using **expressions** (the `{% raw %}{{ }}{% endraw %}` syntax). That's really all you need to read the workflow below.
 
 ## The workflow: daily news digest to Telegram
 
@@ -147,7 +147,7 @@ Here's the automation itself — in n8n it's titled *"Daily News digest with RSS
 
 Reading the canvas from left to right, here's what each node does.
 
-**Step 1 — Schedule Trigger.** A **Schedule Trigger** fires the workflow once a day, fires at the right local time, not UTC. This is what makes it unattended — I never open n8n to run it. (There's also a manual "Execute workflow" trigger wired in alongside it, which is handy for testing without waiting for the schedule.)
+**Step 1 — Schedule Trigger.** A **Schedule Trigger** fires the workflow once a day. This is what makes it unattended — I never open n8n to run it. (There's also a manual "Execute workflow" trigger wired in alongside it, which is handy for testing without waiting for the schedule.)
 
 **Step 2 — RSS Read (one node per feed).** Two **RSS Read** nodes pull my feeds in parallel — one for [Perfect Tennis](https://www.perfect-tennis.com/feed/) (I follow the tour closely) and one for [Google News](https://news.google.com/rss?hl=en-US&gl=US&ceid=US:en). Keeping them as separate nodes makes the canvas readable and makes it obvious which feed broke if one goes down. If you're hunting for good feeds to point these at, the [awesome-rss-feeds](https://github.com/plenaryapp/awesome-rss-feeds) list is a great curated directory across just about every topic.
 
